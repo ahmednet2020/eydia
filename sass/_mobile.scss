@@ -1,0 +1,117 @@
+//maxsize
+@include media(xs) {
+    .slider{
+        .carousel-item{
+            .carousel-caption {
+                width: 100%;
+                text-align: center;
+                top: 35%;
+                bottom: 25%;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+    .compny{
+        .carousel-inner{
+            .carousel-item{
+                width: 100%;
+            }
+            .carousel-item.slideractive{
+                margin-left: -100%;
+            }
+        }
+    }
+}
+
+@include media(maxmd) {
+    .silder-product{
+        .carousel-caption{
+            text-align: center;
+        }
+        .carousel-indicators{
+            bottom: -1rem;
+            width: 100%;
+            left: 0;
+            right: 0;
+            margin: 0;
+        }
+    }
+}
+//minisize
+@include media(sm) {
+    .slider{
+        .carousel-caption {
+        width: 70%;
+        }
+    }
+    //for all card
+    .card-deck {
+            .card{
+            -ms-flex: 0 0 42%;
+            flex: 0 0 42%;
+            margin-bottom: 15px;
+        }
+    }
+    .compny{
+        .carousel-inner{
+            .carousel-item{
+                width: 50%;
+            }
+            .carousel-item.slideractive{
+                margin-left: -50%;
+            }
+        }
+    }
+}
+
+@include media(md) {
+}
+
+@include media(lg) {
+    .slider{
+        .carousel-caption {
+            width: 50%;
+        }
+    }
+    .card-deck {
+            .card{
+            -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+        }
+    }
+    .compny{
+        .carousel-inner{
+            .carousel-item{
+                width: 33.333%;
+            }
+            .carousel-item.slideractive{
+                margin-left: -33.333%;
+            }
+        }
+    }
+}
+
+@include media(xl) {
+    .slider{
+        .carousel-caption {
+            width: 45%;
+        }
+    }
+    .card-deck{
+            .card{
+            -ms-flex: 0 0 22%;
+            flex: 0 0 22%;
+        }
+    }
+    .compny{
+        .carousel-inner{
+            .carousel-item{
+                width: 25%;
+            }
+            .carousel-item.slideractive{
+                margin-left: -25%;
+            }
+        }
+    }
+}

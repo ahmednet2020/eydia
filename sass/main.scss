@@ -1,0 +1,23 @@
+//templet name: axit
+//version: 5.0.0
+//author: ahmed net
+
+//module
+@import '_var';
+@import '_mixin';
+@import '_components';
+@import '_normalize';
+@import '_typography';
+//layout
+@import 'layout/_header';
+@import 'layout/_nav';
+@import 'layout/_slider';
+@import 'layout/_section';
+@import 'layout/_animate';
+//form
+@import 'layout/_button';
+@import 'layout/_form';
+//mobile
+@import '_mobile';
+
+

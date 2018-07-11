@@ -1,0 +1,46 @@
+.slider {
+    .carousel-item {
+        img {
+            max-height: 600px;
+        }
+        .carousel-caption {
+            text-align: left;
+            bottom: 15%;
+            left: 15%;
+            top: auto;
+        }
+    }
+}
+
+//
+.compny{
+    .carousel-caption{
+        position: relative;
+        top: 0;
+        bottom:0;
+        left: 0;
+        right: 0;
+    }
+    .carousel-inner{
+        margin: 0 auto;
+        width: 80%;
+        white-space: nowrap;
+        .carousel-item{
+            position: relative;
+            display: inline-block;
+            width: 33.333%;
+            margin: 0;
+            padding:0 1%;
+        }
+    }
+    .carousel-item-next, .carousel-item-prev, .carousel-item.active{
+        display: inline-block;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width: 9%;
+    }
+    .carousel-item.slideractive{
+        position:relative;
+        margin-left: -33.333%;
+    }
+}

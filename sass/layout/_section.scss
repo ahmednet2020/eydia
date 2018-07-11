@@ -1,0 +1,115 @@
+main {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+}
+
+.portfolio {
+    .products {
+    	position: relative;
+        height: 300px;
+        overflow: hidden;
+        img{
+        	position: absolute;
+        	top: 0;
+        	right: 0;
+        	left: 0;
+        	bottom: 0;
+        }
+    }
+    .img-hover {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 9999;
+        i {
+            margin-top: 27%;
+        }
+        .hover-footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            padding: 10%;
+        }
+    }
+}
+.silder-product{
+    .carousel-caption{
+        position: static;
+        text-align: left;
+        padding:0;
+        margin: 0;
+        overflow: hidden;
+        .list-group-item{
+            a{
+                padding-left:0.5rem;
+            }
+        }
+    }
+    .carousel-indicators{
+        bottom: 10%;
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+}
+.priceplan{
+    .card-body{
+        h3{
+            border-bottom-style:solid;
+            border-bottom-width:0.2rem;
+            sub{
+                left: -1em;
+                bottom: -.5em;
+            }
+        }
+    }
+}
+.hotproudcts{
+    padding:4rem 0;
+    .media{
+        img{
+            max-width: 40%;
+        }
+        .btn:before{
+            content: "";
+        }
+    }
+}
+.team{
+    .card-header{
+        position: relative;
+        overflow: hidden;
+        .list-inline{
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+.knowledge{
+    .card{
+        border:0;
+    }
+    background-image: url("../img/welcome.jpg");
+    background-size: cover;
+    .carousel-item{
+        .carousel-caption{
+            position:static;
+        }
+    }
+    .carousel-indicators{
+        position:static;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+    .card-header{
+        border:0;
+    }
+}
+.contact{
+    .map{overflow:hidden;}
+}

@@ -1,0 +1,31 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+html,
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    @include media(xs) {
+        font-size: 12px;
+    }
+    @include media(xl) {
+        font-size: 16px;
+    }
+}
+img{
+    max-width: 100%;
+}
+a,
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+dl, ol, ul{
+    margin: 0;
+}

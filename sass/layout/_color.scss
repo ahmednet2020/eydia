@@ -1,0 +1,205 @@
+//defult color
+a,  
+a:hover {
+    @extend %text-blue;
+}
+p,h1,h2,h3,h4,h5,h6{
+   @extend %text-black; 
+}
+//class color
+.icon-border {
+    @extend %dark-border;
+    &:hover {
+        @extend %bg-blue;
+        @extend %text-white;
+    }
+}
+.text-blue{
+    @extend %text-blue;
+}
+.border-bottom{
+    @extend %black-border;
+
+}
+.carousel-control-next, .carousel-control-prev{
+    @extend %text-black; 
+}
+
+li.circel{
+    @extend %bg-black;
+    &.active{
+        @extend %bg-blue;
+    }
+}
+.bgc-dark{
+    @extend %bg-dark;
+}
+.ovrlay{
+    background-color: rgba($whitecolor,0.9);
+}
+//start color themes
+main {
+    @extend %dark-border;
+    a,
+    span {
+        @extend %text-black;
+    }
+}
+
+.navbar {
+    @extend %bg-white;
+    .nav-link,
+    .dropdown-item {
+        @extend %text-black;
+        &:hover,
+        &:focus {
+            @extend %text-blue;
+            @extend %bg-transparent;
+        }
+    }
+    .list-group-item {
+        border-right-color: $darkcolor;
+    }
+
+}
+
+.navbar-toggler {
+    @extend %blue-border;
+}
+.carousel-caption {
+    @extend %text-black;
+}
+
+.btn-primary {
+    @extend %text-white;
+    @extend %bg-blue;
+    @extend %blue-border;
+    &:hover {
+        @extend %bg-white;
+        @extend %text-blue;
+        @extend %white-border;
+    }
+}
+
+.section-header {
+    @extend %text-black;
+}
+
+.doing {
+    @extend %text-black;
+    i {
+        @extend %text-blue;
+    }
+}
+.portfolio{
+    .img-hover{
+        @extend %bg-blue;
+        @extend %text-white;
+        p,h6{
+            @extend %text-white;
+        }
+    }
+    .hover-footer{
+        @extend %bg-black;
+    }
+}
+.silder-product{
+    @extend %bg-dark;
+    .carousel-caption{
+         .list-group-item{
+            @extend %text-black;
+            a{
+                @extend %text-black;
+            }
+         }
+    }
+}
+.priceplan{
+    .card-header{
+        @extend %bg-dark;
+        @extend %text-black;
+        &:hover{
+            @extend %bg-blue;
+            h4{
+                @extend %text-white;
+            }
+        }
+    }
+    .card-body{
+       @extend %text-black; 
+        h3{
+            @extend %blue-border;
+        }
+    }
+}
+.hotproudcts{
+    @extend %bg-blue;
+    .container{
+        @extend %bg-white;
+    }
+
+}
+.team{
+    .list-inline{
+        a{
+         @extend %text-white;
+        }
+    }
+}
+//color for animat
+.team{
+  .card{
+    &:hover{
+        .card-body{
+            @extend %bg-blue;
+            p,
+            .card-title,
+            .card-subtitle{
+                @extend %text-white;
+            }
+        }
+    }
+  }
+}
+.knowledge{
+    .card{
+        @extend %bg-transparent;
+    }
+    .card-header{
+        &:hover{
+            @extend %bg-blue;
+            a{
+                @extend %text-white;
+            }
+        }
+    }
+}
+.contact{
+    .list-group-item{
+        @extend %text-black;
+    }
+}
+.form-control{
+    @extend %text-black;
+    @extend %bg-white;
+    @extend %dark-border;
+    &:focus{
+        @extend %text-black;
+        @extend %bg-white;
+        @extend %blue-border;
+        
+    }   
+}
+footer{
+    h6{
+      @extend %text-white;  
+    }
+   @extend %bg-blue;
+   .icon-border{
+    @extend %text-white;
+   }
+   .icon-border:hover{
+     @extend %bg-white;
+     @extend %text-blue;
+    }
+}

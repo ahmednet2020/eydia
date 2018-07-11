@@ -1,0 +1,45 @@
+.container-fluid{
+	padding: 0;
+	margin: 0;
+}
+.icon-border{
+	border-radius: 50%;
+	border-width: 1px;
+	border-style: solid;
+	padding: 0.5rem;
+}
+.border-bottom{
+    border-bottom-style:solid;
+    border-bottom-width:0.1rem;
+}
+.list-group-item{
+		border-color: transparent;
+		padding: 0;
+		background-color:transparent;
+}
+.navbar-expand-md .navbar-nav  .nav-link{
+	padding:1rem;
+}
+.navbar-expand-md .navbar-nav .nav-item.dropdown > .nav-link,
+div.dropdown-item > .nav-link{
+		cursor: default;
+}
+.carousel-control-next, .carousel-control-prev{
+	opacity: 1;
+}
+.carousel-item{
+	@include transition(all 0.5s ease);
+}
+li.circel{
+    width: 1.1rem;
+    height: 1.1rem;
+    @include perfix(border-radius, 50%, ms no);
+}
+.btn{
+	border:0;
+	cursor: pointer;
+}
+.dropdown-menu{
+	top:90%;
+	margin:0;
+}

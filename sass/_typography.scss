@@ -1,0 +1,124 @@
+p {
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 {
+
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.logo-text {
+    font-size: 2rem;
+}
+.slider{
+    .carousel-caption {
+        h3 {
+
+            font-weight: normal;
+            line-height: 1;
+            @include media(xs) {
+                display: none;
+            }
+            @include media(sm) {
+                font-size: 2rem;
+            }
+            @include media(md) {
+                font-size: 4rem;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+            @include media(xs) {
+                display: none;
+            }
+            @include media(sm) {
+                font-size: 0.9rem;
+            }
+            @include media(md) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+.silder-product{
+    .carousel-caption{
+        .list-group-item{
+            font-size: 1.1rem;
+            font-weight: bold;
+            &:before{
+                    content: "\f105";
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    font-weight: bold;
+            }
+        }
+    }
+}
+.priceplan{
+    .card-body{
+    h3{
+        font-size: 2rem;
+        span{
+            vertical-align: text-bottom;
+            sup,sub{
+                    font-size: 50%;
+                    font-weight: normal;
+            }
+        }
+     }
+    }
+}
+.compny{
+    .carousel-caption{
+        h6{
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    }
+}
+.knowledge{
+        .carousel-caption{
+            .day{font-size:3rem;}
+        }
+}

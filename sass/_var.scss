@@ -1,0 +1,50 @@
+$bluecolor: #00aeef;
+$textblack:#777777;
+$darkcolor:#ebebeb;
+$whitecolor:#fff;
+// color class
+%text-black {
+    color: $textblack !important;
+}
+
+%text-blue {
+    color: $bluecolor !important;
+}
+
+%text-white {
+    color: $whitecolor !important;
+}
+
+//bg class
+%bg-blue {
+    background-color: $bluecolor;
+}
+
+%bg-white {
+    background-color: $whitecolor;
+}
+
+%bg-dark {
+    background-color: $darkcolor;
+}
+
+%bg-black {
+    background-color: $textblack;
+}
+%bg-transparent{
+    background-color:transparent;
+}
+//border
+%dark-border {
+    border-color: $darkcolor;
+}
+%black-border {
+    border-color: $textblack;
+}
+%blue-border {
+    border-color: $bluecolor;
+}
+
+%white-border {
+    border-color: $whitecolor;
+}

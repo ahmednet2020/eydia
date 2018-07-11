@@ -1,0 +1,122 @@
+.portfolio {
+    @include transform-style();
+    @include perspective(1000px);
+
+    .products {
+        &:hover .img-hover {
+            @include translateY(0);
+        }
+    }
+    .img-hover {
+
+        @include transition(all 0.5s ease-in-out);
+        @include translateY(100%);
+        @include transform-origin(center);
+    }
+}
+//changing effect in slider from translate to scale in product section
+.silder-product{
+    .carousel-item-next.carousel-item-left,
+    .carousel-item-prev.carousel-item-right {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-next.carousel-item-left,
+      .carousel-item-prev.carousel-item-right {
+        -webkit-transform: scale3d(1);
+                transform: scale3d(1);
+      }
+    }
+
+    .carousel-item-next,
+    .active.carousel-item-right {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-next,
+      .active.carousel-item-right {
+        -webkit-transform: scale3d(0);
+                transform: scale3d(0);
+      }
+    }
+
+    .carousel-item-prev,
+    .active.carousel-item-left {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-prev,
+      .active.carousel-item-left {
+        -webkit-transform: scale3d(0);
+                transform: scale3d(0);
+      }
+    }
+
+}
+//card effect
+.team{
+    .card-deck{
+      .card{
+        &:hover{
+            .card-header{
+              .list-inline{
+                @include transition(all 0.5s linear);
+                bottom:0;
+              }
+            }
+        }
+        .card-body{
+           @include transition(all 0.5s ease-in-out);
+        }
+      }
+    }
+}
+//compny slider stop effect in bootstrap
+.compny{
+    .carousel-item-next.carousel-item-left,
+    .carousel-item-prev.carousel-item-right {
+      -webkit-transform: none;
+              transform: none;
+    }
+
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-next.carousel-item-left,
+      .carousel-item-prev.carousel-item-right {
+        -webkit-transform: none;
+                transform: none;
+      }
+    }
+
+    .carousel-item-next,
+    .active.carousel-item-right {
+      -webkit-transform: none;
+              transform: none;
+    }
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-next,
+      .active.carousel-item-right {
+        -webkit-transform: none;
+                transform: none;
+      }
+    }
+
+    .carousel-item-prev,
+    .active.carousel-item-left {
+      -webkit-transform: none;
+              transform: none;
+    }
+
+    @supports ((-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)) {
+      .carousel-item-prev,
+      .active.carousel-item-left {
+        -webkit-transform: none;
+                transform: none;
+      }
+    }
+
+}
